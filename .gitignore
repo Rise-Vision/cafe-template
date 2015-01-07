@@ -27,4 +27,8 @@ build/Release
 node_modules
 
 # Debug log from npm
+<<<<<<< HEAD
 npm-debug.log
+=======
+npm-debug.log
+>>>>>>> 92060e43922209bbf340687fd754bc7d29e59449
