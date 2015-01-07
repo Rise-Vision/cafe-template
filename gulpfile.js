@@ -3,21 +3,7 @@
 // ----------------------------
 
 var gulp 			= require('gulp');
-var browserSync     = require('browser-sync');
-var reload			= browserSync.reload;
 var sass 			= require('gulp-sass');
-
-//-----------------------------------------
-//Browser-sync task for starting the server
-//-----------------------------------------
-
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
 
 
 // ----------------------------
@@ -37,16 +23,7 @@ gulp.task('sass', function() {
   gulp.src(paths.sass_main)
     .pipe(sass())
     .pipe(gulp.dest('./src/assets/styles/'))
-    .pipe(reload({stream:true}));
 });
-
-
-// Reload all Browsers
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
-
-
 
 
 
@@ -54,8 +31,7 @@ gulp.task('bs-reload', function () {
 // Set up our default tasks
 // ----------------------------
 
-gulp.task('default', ['browser-sync'], function(){
+gulp.task('default', function(){
 	gulp.start('sass')
 	gulp.watch(paths.sass_watch,['sass']); 
-	gulp.watch("*.html", ['bs-reload']);
 }); 
