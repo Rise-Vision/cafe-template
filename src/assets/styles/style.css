@@ -189,7 +189,7 @@ ul.price {
   width: 30%;
   height: 100vh;
   text-align: center;
-  background: #585555;
+  background: #494646;
   display: inline-block;
   vertical-align: top;
   font-size: 20px;
@@ -216,55 +216,146 @@ ul.price {
 
 .quoteSlider h3 {
   position: absolute;
-  font-size: 3.7vw;
+  font-size: 3.4vw;
   font-family: 'Satisfy', cursive;
   color: #979797;
   letter-spacing: 0.1vw;
   text-align: center;
-  transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%); }
+  -webkit-animation: bounceInRightText 20s 1.5s ease infinite;
+  -webkit-animation-fill-mode: forwards; }
 
 .quoteSlider h3:nth-child(1) {
-  animation: left-one 20s ease infinite;
-  -webkit-animation: left-one 20s ease infinite; }
+  animation: bounceInRightText 20s ease infinite;
+  -webkit-animation: bounceInRightText 20s ease infinite; }
 
 .quoteSlider h3:nth-child(2) {
-  animation: left-two 20s ease infinite;
-  -webkit-animation: left-two 20s ease infinite; }
+  margin-top: 60%;
+  margin-left: 20%;
+  animation: bounceInRightTextTwo 20s ease infinite;
+  -webkit-animation: bounceInRightTextTwo 20s ease infinite; }
+
+.quoteSlider h3:nth-child(3) {
+  animation: bounceInRightTextThree 20s ease infinite;
+  -webkit-animation: bounceInRightTextThree 20s ease infinite; }
+
+.quoteSlider h3:nth-child(4) {
+  margin-top: 60%;
+  margin-left: 15%;
+  animation: bounceInRightTextFour 20s ease infinite;
+  -webkit-animation: bounceInRightTextFour 20s ease infinite; }
 
 /** Webkit Keyframes **/
-@-webkit-keyframes left-one {
+@-webkit-keyframes bounceInRightText {
+  0%, 6%, 7%, 9%, 10% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
   0% {
-    -webkit-transform: translateX(100%); }
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0); }
 
-  10% {
-    -webkit-transform: translateX(0); }
+  3% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0); }
 
-  40% {
-    -webkit-transform: translateX(0); }
+  4% {
+    -webkit-transform: translate3d(10px, 0, 0); }
 
-  50% {
-    -webkit-transform: translateX(-100%); }
+  5% {
+    -webkit-transform: translate3d(-5px, 0, 0); }
+
+  6% {
+    -webkit-transform: none; }
+
+  53% {
+    opacity: 1; }
+
+  64% {
+    opacity: 0; }
 
   100% {
-    -webkit-transform: translateX(-100%); } }
+    opacity: 0; } }
 
-@-webkit-keyframes left-two {
+@-webkit-keyframes bounceInRightTextTwo {
   0% {
-    -webkit-transform: translateX(100%); }
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0); }
 
-  50% {
-    -webkit-transform: translateX(100%); }
+  15% {
+    opacity: 1;
+    -webkit-transform: translate3d(1000px, 0, 0); }
 
-  60% {
-    -webkit-transform: translateX(0); }
+  19% {
+    -webkit-transform: translate3d(-25px, 0, 0); }
+
+  20% {
+    -webkit-transform: translate3d(10px, 0, 0); }
+
+  21% {
+    -webkit-transform: translate3d(-5px, 0, 0); }
+
+  22% {
+    -webkit-transform: none; }
+
+  53% {
+    opacity: 1; }
+
+  64% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes bounceInRightTextThree {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0); }
+
+  65% {
+    -webkit-transform: translate3d(1000px, 0, 0); }
+
+  69% {
+    -webkit-transform: translate3d(-25px, 0, 0); }
+
+  70% {
+    -webkit-transform: translate3d(10px, 0, 0); }
+
+  71% {
+    -webkit-transform: translate3d(-5px, 0, 0); }
+
+  72% {
+    -webkit-transform: none; }
 
   90% {
-    -webkit-transform: translateX(0); }
+    opacity: 1; }
 
   100% {
-    -webkit-transform: translateX(-100%); } }
+    opacity: 0; } }
+
+@-webkit-keyframes bounceInRightTextFour {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0); }
+
+  75% {
+    -webkit-transform: translate3d(1000px, 0, 0); }
+
+  79% {
+    -webkit-transform: translate3d(-25px, 0, 0); }
+
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0); }
+
+  81% {
+    -webkit-transform: translate3d(-5px, 0, 0); }
+
+  82% {
+    -webkit-transform: none; }
+
+  90% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
 
 .logo {
   width: 100%;
@@ -302,11 +393,17 @@ h2 {
   font-family: dense;
   color: #A36829; }
 
+.allEspresso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
 .coffeeMore {
   height: 50vh;
   width: 100%;
   position: absolute;
-  top: 58.4%;
+  top: 52.4%;
   left: 0; }
 
 .column {
@@ -341,7 +438,7 @@ h2 {
 .cold h2 {
   margin-top: 0%; }
 
-.imageSlider {
+.bigImage {
   width: 64.5%;
   height: 50vh;
   margin-left: 1%;
@@ -351,7 +448,7 @@ h2 {
   margin-top: 1.5%;
   position: relative;
   border: 1px solid black; }
-  .imageSlider img {
+  .bigImage img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
