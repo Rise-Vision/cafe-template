@@ -586,7 +586,7 @@ h2 {
   width: 26vw;
   height: 27vh;
   position: absolute;
-  top: 2.3vw;
+  top: 4.3vw;
   left: 55.2%; }
   .tag img {
     width: 100%;
@@ -595,7 +595,7 @@ h2 {
 
 .new {
   position: absolute;
-  top: 8vh;
+  top: 11vh;
   left: 28vw;
   width: 14vw;
   line-height: 1.7; }
