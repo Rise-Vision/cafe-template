@@ -339,8 +339,8 @@ ul.price {
 }
 
 h2 {
-	border-top: 3px solid #644727;
-	border-bottom: 3px solid #644727;
+	border-top: 5px solid #644727;
+	border-bottom: 5px solid #644727;
 	padding: 2% 0% 2% 0%;
 	width: 100%;
 	margin: 5% 0% 6.5% 0%;
@@ -432,12 +432,13 @@ h2 {
 	}
 }
 
+ 
 .tag {
-	width: 57%;
+	width: 26vw;
 	height: 27vh;
 	position: absolute;
-	top: 23%;
-	left: 56.1%;
+	top: 2.3vw;
+	left: 55.2%;
 	img {
 		width: 100%;
 		height: 100%;
@@ -447,7 +448,7 @@ h2 {
 
 .new {
 	position: absolute;
-	top: 16vh;
+	top: 8vh;
 	left: 28vw;
 	width: 14vw;
 	line-height: 1.7;
@@ -467,15 +468,23 @@ h2 {
 }
 
 
-@media (min-width: 2500px) and (max-width: 3840px) {
+@media screen and (min-width: 2500px) {
 	h2 {
-		border-top: 6px solid #644727;
-		border-bottom: 6px solid #644727;
+		border-top: 9px solid #644727;
+		border-bottom: 9px solid #644727;
 	}
 
 	.new span {
 		border-bottom: 5px solid #979797;
 	}
+}
+
+@media screen and (min-width: 3840px) {
+	h2 {
+		border-top: 10px solid #644727;
+		border-bottom: 10px solid #644727;
+	}
+
 }
 
 
