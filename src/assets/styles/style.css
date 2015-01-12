@@ -149,10 +149,11 @@ body {
 
 p {
   margin: 0;
-  font-size: 1.6vw;
-  text-align: right;
-  word-spacing: 0.6vw;
+  font-size: 1.5vw;
+  text-align: center;
+  word-spacing: 0.7vw;
   width: 97%;
+  margin-left: 25.3%;
   font-family: dense; }
 
 body, html {
@@ -593,8 +594,8 @@ h2 {
 
 .new {
   position: absolute;
-  top: 30%;
-  left: 70%;
+  top: 16vh;
+  left: 28vw;
   width: 14vw;
   line-height: 1.7; }
   .new p {
