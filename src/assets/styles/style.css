@@ -205,14 +205,70 @@ ul.price {
 
 .quoteSlider {
   width: 27vw;
-  height: 50vh;
+  height: 64vh;
   margin: 27px auto;
   overflow: hidden;
   position: relative;
-  -webkit-border-radius: 5px;
-  -webkit-transition: background-color 350ms;
-  -moz-transition: background-color 350ms;
-  transition: background-color 350ms; }
+  -webkit-border-radius: 5px; }
+
+.strokeOne {
+  width: 40%;
+  position: absolute;
+  top: 61%;
+  left: 29%; }
+  .strokeOne svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    -webkit-animation: strokstrokeOne 2s linear forwards;
+    animation: strokeOne 2s linear forwards;
+    -webkit-animation: strokeOne 20s infinite;
+    -webkit-animation-delay: 3s; }
+
+.strokeTwo {
+  width: 35%;
+  position: absolute;
+  top: 67%;
+  left: 30%; }
+  .strokeTwo svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    -webkit-animation: strokeTwo 2s linear forwards;
+    animation: strokeTwo 2s linear forwards;
+    -webkit-animation: strokeTwo 20s infinite;
+    -webkit-animation-delay: 4s; }
+
+.heart {
+  width: 32%;
+  position: absolute;
+  top: 63%;
+  left: 52%; }
+
+.heart svg {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  -webkit-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+  -webkit-animation: dash 20s infinite;
+  -webkit-animation-delay: 15s; }
 
 .quoteSlider h3 {
   position: absolute;
@@ -240,7 +296,7 @@ ul.price {
 
 .quoteSlider h3:nth-child(4) {
   margin-top: 60%;
-  margin-left: 15%;
+  margin-left: 10%;
   animation: bounceInRightTextFour 20s ease infinite;
   -webkit-animation: bounceInRightTextFour 20s ease infinite; }
 
@@ -280,20 +336,20 @@ ul.price {
     opacity: 0;
     -webkit-transform: translate3d(3000px, 0, 0); }
 
-  15% {
+  10% {
     opacity: 1;
     -webkit-transform: translate3d(1000px, 0, 0); }
 
-  19% {
+  11% {
     -webkit-transform: translate3d(-25px, 0, 0); }
 
-  20% {
+  12% {
     -webkit-transform: translate3d(10px, 0, 0); }
 
-  21% {
+  13% {
     -webkit-transform: translate3d(-5px, 0, 0); }
 
-  22% {
+  15% {
     -webkit-transform: none; }
 
   53% {
@@ -311,7 +367,7 @@ ul.price {
     -webkit-transform: translate3d(3000px, 0, 0); }
 
   65% {
-    -webkit-transform: translate3d(1000px, 0, 0); }
+    -webkit-transform: translate3d(2000px, 0, 0); }
 
   69% {
     -webkit-transform: translate3d(-25px, 0, 0); }
@@ -336,23 +392,79 @@ ul.price {
     opacity: 0;
     -webkit-transform: translate3d(3000px, 0, 0); }
 
-  75% {
-    -webkit-transform: translate3d(1000px, 0, 0); }
+  69% {
+    -webkit-transform: translate3d(2000px, 0, 0); }
 
-  79% {
+  73% {
     -webkit-transform: translate3d(-25px, 0, 0); }
 
-  80% {
+  74% {
     -webkit-transform: translate3d(10px, 0, 0); }
 
-  81% {
+  75% {
     -webkit-transform: translate3d(-5px, 0, 0); }
 
-  82% {
+  76% {
     -webkit-transform: none; }
 
   90% {
     opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes dash {
+
+  30% {
+    stroke-dashoffset: 0; }
+
+  42% {
+    opacity: 0; }
+
+  60% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes strokeOne {
+
+  10% {
+    opacity: 1;
+    stroke-dashoffset: 0; }
+
+  55% {
+    opacity: 0; }
+
+  57% {
+    opacity: 0; }
+
+  67% {
+    opacity: 0; }
+
+  70% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes strokeTwo {
+
+  10% {
+    opacity: 1;
+    stroke-dashoffset: 0; }
+
+  49% {
+    opacity: 0; }
+
+  55% {
+    opacity: 0; }
+
+  67% {
+    opacity: 0; }
+
+  70% {
+    opacity: 0; }
 
   100% {
     opacity: 0; } }
@@ -452,6 +564,34 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.tag {
+  width: 57%;
+  height: 27vh;
+  position: absolute;
+  top: 23%;
+  left: 56.1%; }
+  .tag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.new {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  width: 14vw;
+  line-height: 1.7; }
+  .new p {
+    font-family: 'Satisfy', cursive;
+    color: #979797;
+    font-size: 2.1vw;
+    text-align: center; }
+  .new span {
+    font-size: 2.6vw;
+    letter-spacing: 0.3vw;
+    line-height: 1.5;
+    border-bottom: 2px solid #979797; }
 
 .bxslider {
   width: 50vw; }

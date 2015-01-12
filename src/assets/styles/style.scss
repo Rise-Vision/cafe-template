@@ -78,15 +78,81 @@ ul.price {
 
 .quoteSlider {
 	width: 27vw;
-	height: 50vh;
+	height: 64vh;
 	margin: 27px auto;
 	overflow: hidden;
 	position: relative;
 	-webkit-border-radius: 5px;
-	-webkit-transition: background-color 350ms;
-	-moz-transition: background-color 350ms;
-	transition: background-color 350ms;
 }
+
+
+.strokeOne {
+	width: 40%;
+	position: absolute;
+	top: 61%;
+	left: 29%;
+	svg {
+		width: 100%;
+		height: 100%;
+		fill: none;
+		stroke: #000;
+		stroke-width: 4;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		stroke-dasharray: 2000;
+		stroke-dashoffset: 2000;
+		-webkit-animation: strokstrokeOne 2s linear forwards;
+		animation: strokeOne 2s linear forwards;
+		-webkit-animation: strokeOne 20s infinite;
+		-webkit-animation-delay: 3s; 
+
+	}
+}
+
+
+.strokeTwo {
+	width: 35%;
+	position: absolute;
+	top: 67%;
+	left: 30%;
+	svg {
+		width: 100%;
+		height: 100%;
+		fill: none;
+		stroke: #000;
+		stroke-width: 4;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		stroke-dasharray: 2000;
+		stroke-dashoffset: 2000;
+		-webkit-animation: strokeTwo 2s linear forwards;
+		animation: strokeTwo 2s linear forwards;
+		-webkit-animation: strokeTwo 20s infinite;
+		-webkit-animation-delay: 4s; 
+	}
+}
+
+.heart {
+	width: 32%;
+	position: absolute;
+	top: 63%;
+	left: 52%;
+}
+
+.heart svg {
+	  fill: none;
+	  stroke: #000;
+	  stroke-width: 4;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  stroke-dasharray: 2000;
+	  stroke-dashoffset: 2000;
+	  -webkit-animation: dash 5s linear forwards;
+	  animation: dash 5s linear forwards;
+	  -webkit-animation: dash 20s infinite;
+	  -webkit-animation-delay: 15s; 
+}
+
 
 
 .quoteSlider h3 {
@@ -96,11 +162,11 @@ ul.price {
 	color: #979797;
 	letter-spacing: 0.1vw;
 	text-align: center;
-	// transform:translateX(100%);
-	// -webkit-transform:translateX(100%);
 	-webkit-animation: bounceInRightText 20s 1.5s ease infinite;
 	-webkit-animation-fill-mode: forwards;
 }
+
+
 .quoteSlider h3:nth-child(1) {
 	animation: bounceInRightText 20s ease infinite;
 	-webkit-animation: bounceInRightText 20s ease infinite;
@@ -120,12 +186,15 @@ ul.price {
 
 .quoteSlider h3:nth-child(4) {
 	margin-top: 60%;
-	margin-left: 15%;
+	margin-left: 10%;
 	animation: bounceInRightTextFour 20s ease infinite;
 	-webkit-animation: bounceInRightTextFour 20s ease infinite;
 }
 
+
 /** Webkit Keyframes **/
+
+
 @-webkit-keyframes bounceInRightText {
 	0%, 6%, 7%, 9%, 10% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -143,11 +212,11 @@ ul.price {
 
 @-webkit-keyframes bounceInRightTextTwo {
 	0% {opacity: 0;-webkit-transform: translate3d(3000px, 0, 0);}
-	15% {opacity: 1;-webkit-transform:translate3d(1000px, 0, 0);}
-    19% {-webkit-transform:translate3d(-25px, 0, 0);}
-    20% {-webkit-transform:translate3d(10px, 0, 0);}
-    21% {-webkit-transform:translate3d(-5px, 0, 0);}
-    22% {-webkit-transform: none;}
+	10% {opacity: 1;-webkit-transform:translate3d(1000px, 0, 0);}
+    11% {-webkit-transform:translate3d(-25px, 0, 0);}
+    12% {-webkit-transform:translate3d(10px, 0, 0);}
+    13% {-webkit-transform:translate3d(-5px, 0, 0);}
+    15% {-webkit-transform: none;}
     53% {opacity: 1;}
     64% {opacity: 0;}
     100% {opacity: 0;}
@@ -157,7 +226,7 @@ ul.price {
 
 @-webkit-keyframes bounceInRightTextThree {
 	0% {opacity: 0;-webkit-transform: translate3d(3000px, 0, 0);}
-	65% {-webkit-transform:translate3d(1000px, 0, 0);}
+	65% {-webkit-transform:translate3d(2000px, 0, 0);}
     69% {-webkit-transform:translate3d(-25px, 0, 0);}
     70% {-webkit-transform:translate3d(10px, 0, 0);}
     71% {-webkit-transform:translate3d(-5px, 0, 0);}
@@ -168,14 +237,48 @@ ul.price {
 
 @-webkit-keyframes bounceInRightTextFour {
 	0% {opacity: 0;-webkit-transform: translate3d(3000px, 0, 0);}
-	75% {-webkit-transform:translate3d(1000px, 0, 0);}
-    79% {-webkit-transform:translate3d(-25px, 0, 0);}
-    80% {-webkit-transform:translate3d(10px, 0, 0);}
-    81% {-webkit-transform:translate3d(-5px, 0, 0);}
-    82% {-webkit-transform: none;}
+	69% {-webkit-transform:translate3d(2000px, 0, 0);}
+    73% {-webkit-transform:translate3d(-25px, 0, 0);}
+    74% {-webkit-transform:translate3d(10px, 0, 0);}
+    75% {-webkit-transform:translate3d(-5px, 0, 0);}
+    76% {-webkit-transform: none;}
     90% {opacity: 1;}
 	100%{opacity: 0;}
 }
+
+@-webkit-keyframes dash {
+	0% { }
+	30%  {stroke-dashoffset: 0;}
+	42% {opacity: 0;}
+	60% {opacity: 0}
+	100% {opacity: 0;}
+}
+
+@-webkit-keyframes strokeOne {
+    0% { }
+	10%  {opacity: 1; stroke-dashoffset: 0;}
+	
+	55%	{opacity: 0}
+	57%	{opacity: 0}
+	67%	{opacity: 0}
+	70%	{opacity: 0}
+	100% {opacity: 0;}
+  }
+
+  @-webkit-keyframes strokeTwo {
+  	0% { }
+	10%  {opacity: 1; stroke-dashoffset: 0;}
+	
+	49%	{opacity: 0}
+	55%	{opacity: 0}
+	67%	{opacity: 0}
+	70%	{opacity: 0}
+	100% {opacity: 0;}
+  }  
+
+
+
+
 
 
 
@@ -225,24 +328,6 @@ h2 {
 
 }
 
-// h3 {
-// 	padding: 0;
-// 	font-size: 3.7vw;
-// 	font-family: 'Satisfy', cursive;
-// 	width: 27vw;
-// 	margin: 0 auto;
-// 	margin-top: 11%;
-// 	color: #979797;
-// 	letter-spacing: 0.1vw;
-// }
-
-// .coffees {
-// 	height: 50vh;
-// 	width: 100%;
-// 	position: absolute;
-// 	top: 58.5%;
-// }
-
 .allEspresso {
 	position: absolute;
 	top: 0;
@@ -256,10 +341,6 @@ h2 {
 	position: absolute;
 	top: 52.4%;
 	left: 0;
-	
-}
-
-.coffees {
 	
 }
 
@@ -277,7 +358,6 @@ h2 {
 }
 
 .columnB {
-	// border: 2px solid yellow;
 	vertical-align: top;
 	overflow: hidden;
 	width: 21vw;
@@ -287,7 +367,6 @@ h2 {
 }
 
 .columnC {
-	// border: 2px solid yellow;
 	vertical-align: top;
 	width: 21vw;
 	height: 100%;
@@ -320,6 +399,40 @@ h2 {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+
+.tag {
+	width: 57%;
+	height: 27vh;
+	position: absolute;
+	top: 23%;
+	left: 56.1%;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.new {
+	position: absolute;
+	top: 30%;
+	left: 70%;
+	width: 14vw;
+	line-height: 1.7;
+	p {
+		font-family: 'Satisfy', cursive;
+		color: #979797;
+		font-size: 2.1vw;
+		text-align: center;
+
+	}
+	span {
+		font-size: 2.6vw;
+		letter-spacing: 0.3vw;
+		line-height: 1.5;
+		border-bottom: 2px solid #979797;
 	}
 }
 
