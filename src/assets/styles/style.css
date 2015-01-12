@@ -595,15 +595,16 @@ h2 {
 
 .new {
   position: absolute;
-  top: 11vh;
-  left: 28vw;
+  top: 11.7vh;
+  left: 27.6vw;
   width: 14vw;
   line-height: 1.7; }
   .new p {
     font-family: 'Satisfy', cursive;
     color: #979797;
     font-size: 2.1vw;
-    text-align: center; }
+    text-align: center;
+    word-spacing: 0.1vw; }
   .new span {
     font-size: 2.6vw;
     letter-spacing: 0.3vw;
