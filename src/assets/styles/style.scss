@@ -452,32 +452,19 @@ h2 {
 		font-size: 2.6vw;
 		letter-spacing: 0.3vw;
 		line-height: 1.5;
-		border-bottom: 2px solid #979797;
+		border-bottom: 4px solid #979797;
 	}
 }
 
-.bxslider {
-	width: 50vw;
-	ul {
-		width: 60vw;
-	}
-}
 
-.bxslider li {
-	height: 50vh;
-	background: black;
-	display: block;
-	img {
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-	}
-}
-
-@media (min-width: 2500px) and (max-width: 3480px) {
+@media (min-width: 2500px) and (max-width: 3840px) {
 	h2 {
 		border-top: 6px solid #644727;
 		border-bottom: 6px solid #644727;
+	}
+
+	.new span {
+		border-bottom: 5px solid #979797;
 	}
 }
 
