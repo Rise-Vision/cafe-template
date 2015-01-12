@@ -532,7 +532,7 @@ h2 {
   height: 50vh;
   width: 100%;
   position: absolute;
-  top: 52.4%;
+  top: 52.2%;
   left: 0; }
 
 .column {
@@ -549,7 +549,7 @@ h2 {
   vertical-align: top;
   overflow: hidden;
   width: 21vw;
-  height: 100%;
+  height: 100vh;
   margin-right: 3%; }
 
 .columnC {
@@ -587,7 +587,7 @@ h2 {
   height: 27vh;
   position: absolute;
   top: 4.3vw;
-  left: 55.2%; }
+  left: 52.2%; }
   .tag img {
     width: 100%;
     height: 100%;
