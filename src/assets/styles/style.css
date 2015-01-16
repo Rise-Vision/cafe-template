@@ -205,7 +205,7 @@ ul.price {
   left: 2.5%; }
 
 .content {
-  background: url("https://static.pexels.com/wp-content/uploads/2014/09/beans-coffee-kitchen-2742-830x550.jpg");
+  background: url("http://i873.photobucket.com/albums/ab300/heffybabe4/coffee5_zps9d7320fd.jpg");
   background-size: cover;
   background-position: center center;
   width: 70%;
@@ -503,12 +503,21 @@ ul.price {
 
 .opacity {
   background: #E2D5C1;
-  width: 100%;
+  width: 34%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5; }
+  opacity: 0.8; }
+
+.opacity2 {
+  background: #E2D5C1;
+  width: 66%;
+  height: 48%;
+  position: absolute;
+  top: 52%;
+  left: 34%;
+  opacity: 0.8; }
 
 h2 {
   border-top: 5px solid #644727;
@@ -575,7 +584,6 @@ h2 {
   vertical-align: top;
   font-size: 0;
   margin-top: 1.5%;
-  border: 1px solid black;
   position: relative; }
   .bigImage img {
     width: 100%;
@@ -583,11 +591,11 @@ h2 {
     object-fit: cover; }
 
 .tag {
-  width: 26vw;
-  height: 27vh;
+  width: 34vw;
+  height: 48vh;
   position: absolute;
-  top: 4.3vw;
-  left: 52.2%; }
+  top: -0.7vw;
+  left: 45.3%; }
   .tag img {
     width: 100%;
     height: 100%;
@@ -595,18 +603,18 @@ h2 {
 
 .new {
   position: absolute;
-  top: 11.7vh;
-  left: 27.6vw;
-  width: 14vw;
+  top: 10.7vh;
+  left: 20.9vw;
+  width: 23vw;
   line-height: 1.7; }
   .new p {
     font-family: 'Satisfy', cursive;
     color: #979797;
-    font-size: 2.1vw;
+    font-size: 2.4vw;
     text-align: center;
     word-spacing: 0.1vw; }
   .new span {
-    font-size: 2.6vw;
+    font-size: 3.1vw;
     letter-spacing: 0.3vw;
     line-height: 1.5;
     border-bottom: 4px solid #979797; }
