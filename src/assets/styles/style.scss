@@ -47,7 +47,6 @@ ul.price {
 
 
 .container {
-	// max-width: 1800px;
 	margin: 0 auto;
 	text-align: center;
 	height: 100vh;
@@ -313,9 +312,6 @@ ul.price {
 
 
 
-
-
-
 //LOGO
 
 .logo {
@@ -349,11 +345,11 @@ ul.price {
 } 
 
 h2 {
-	border-top: 5px solid #644727;
-	border-bottom: 5px solid #644727;
+	border-top: 0.7vh solid #644727;
+	border-bottom: 0.7vh solid #644727;
 	padding: 2% 0% 2% 0%;
 	width: 100%;
-	margin: 5% 0% 6.5% 0%;
+	margin: 2vh 0% 2.5vh 0%;
 	font-size: 2.5vw;
 	letter-spacing: 0.1vw;
 	font-family: dense;
@@ -373,7 +369,7 @@ h2 {
 	height: 50vh;
 	width: 100%;
 	position: absolute;
-	top: 52.2%;
+	top: 52.5%;
 	left: 0;
 	
 }
@@ -386,9 +382,11 @@ h2 {
 .columnA {
 	position: relative;
 	height: 100vh;
-	// margin-left: 0.2%;
 	top: 0;
 	left: 0%;
+	h2 {
+		padding: 1.7%;
+	}
 }
 
 .columnB {
@@ -433,22 +431,16 @@ h2 {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-			// -webkit-animation-duration: 40s;
-		 //    -webkit-animation-name: pan;
-			// -webkit-animation-iteration-count: infinite;
-			// -webkit-animation-direction: alternate;
-			//  /* Hey browser, use your GPU */
-		 //   	-webkit-transform: translate3d(0, 0, 0);
 	}
 }
 
  
 .tag {
-	width: 34vw;
+	width: 36vw;
 	height: 48vh;
 	position: absolute;
 	top: -0.7vw;
-	left: 45.3%;
+	left: 40.3%;
 	img {
 		width: 100%;
 		height: 100%;
@@ -459,7 +451,7 @@ h2 {
 .new {
 	position: absolute;
 	top: 10.7vh;
-	left: 20.9vw;
+	left: 20.6vw;
 	width: 23vw;
 	line-height: 1.7;
 	p {
@@ -474,28 +466,8 @@ h2 {
 		font-size: 3.1vw;
 		letter-spacing: 0.3vw;
 		line-height: 1.5;
-		border-bottom: 4px solid #979797;
+		border-bottom: 0.5vh solid #979797;
 	}
-}
-
-
-@media screen and (min-width: 2500px) {
-	h2 {
-		border-top: 9px solid #644727;
-		border-bottom: 9px solid #644727;
-	}
-
-	.new span {
-		border-bottom: 5px solid #979797;
-	}
-}
-
-@media screen and (min-width: 3840px) {
-	h2 {
-		border-top: 10px solid #644727;
-		border-bottom: 10px solid #644727;
-	}
-
 }
 
 
