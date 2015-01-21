@@ -541,7 +541,7 @@ h2 {
   height: 50vh;
   width: 100%;
   position: absolute;
-  top: 52.5%;
+  top: 52.4%;
   left: 0; }
 
 .column {
@@ -554,7 +554,7 @@ h2 {
   top: 0;
   left: 0%; }
   .columnA h2 {
-    padding: 1.7%; }
+    padding: 2%; }
 
 .columnB {
   vertical-align: top;
