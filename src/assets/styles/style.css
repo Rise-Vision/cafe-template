@@ -167,7 +167,7 @@ ul {
   ul li {
     list-style: none;
     text-align: left;
-    line-height: 1.6;
+    line-height: 6.6vh;
     font-size: 2vw;
     font-family: dense; }
 
@@ -513,9 +513,9 @@ ul.price {
 .opacity2 {
   background: #E2D5C1;
   width: 66%;
-  height: 48%;
+  height: 44%;
   position: absolute;
-  top: 52%;
+  top: 56%;
   left: 34%;
   opacity: 0.8; }
 
@@ -541,7 +541,7 @@ h2 {
   height: 50vh;
   width: 100%;
   position: absolute;
-  top: 52.4%;
+  top: 56.4vh;
   left: 0; }
 
 .column {
@@ -551,7 +551,7 @@ h2 {
 .columnA {
   position: relative;
   height: 100vh;
-  top: 0;
+  top: 0.5vh;
   left: 0%; }
   .columnA h2 {
     padding: 2%; }
@@ -572,7 +572,7 @@ h2 {
   width: 67%;
   height: 38%;
   position: absolute;
-  top: 54.4%;
+  top: 58.9%;
   left: 32.7%; }
 
 .cold h2 {
@@ -608,7 +608,7 @@ h2 {
   top: 10.7vh;
   left: 20.6vw;
   width: 23vw;
-  line-height: 1.7; }
+  line-height: 7.7vh; }
   .new p {
     font-family: 'Satisfy', cursive;
     color: #979797;
