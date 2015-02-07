@@ -597,31 +597,8 @@ h2 {
   height: 48vh;
   position: absolute;
   bottom: 1.2vw;
-  left: 40.3%; }
+  left: 35.3%; }
   .tag img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-
-.new {
-  position: absolute;
-  top: 12.3vh;
-  left: 20.6vw;
-  width: 23vw;
-  line-height: 7.7vh; }
-  .new p {
-    font-family: 'Satisfy', cursive;
-    color: #979797;
-    font-size: 2.4vw;
-    text-align: center;
-    word-spacing: 0.1vw; }
-  .new span {
-    font-size: 3.1vw;
-    letter-spacing: 0.3vw;
-    line-height: 1.5;
-    border-bottom: 0.5vh solid #979797; }
-
-@media (min-width: 3840px) and (min-height: 2160px) {
-  .new {
-    top: 12.7vh; }
- }
