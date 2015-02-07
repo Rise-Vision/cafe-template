@@ -450,7 +450,7 @@ h2 {
 
 .new {
 	position: absolute;
-	top: 12.3vh;
+	top: 11.3vh;
 	left: 20.6vw;
 	width: 23vw;
 	line-height: 7.7vh;
@@ -470,6 +470,12 @@ h2 {
 	}
 }
 
+
+@media (min-width: 3840px) and (min-height: 2160px) {
+	.new {
+		top: 12.7vh;
+	}
+}
 
 
 
