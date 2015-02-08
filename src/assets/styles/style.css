@@ -621,14 +621,6 @@ h2 {
     line-height: 1.5;
     border-bottom: 0.5vh solid #979797; }
 
-@media (min-width: 3480px) and (min-height: 2157px) {
-  .new {
-    top: 13.3vh; }
-
-  .heart {
-    top: 17vh; }
- }
-
 @media (min-width: 3840px) and (min-height: 2160px) {
   .new {
     top: 12.7vh; }
