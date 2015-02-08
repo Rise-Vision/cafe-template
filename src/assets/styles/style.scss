@@ -151,7 +151,7 @@ ul.price {
 .heart {
 	width: 32%;
 	position: absolute;
-	top: 63%;
+	top: 40vh;
 	left: 52%;
 }
 
@@ -449,34 +449,38 @@ h2 {
 
 }
 
-// .new {
-// 	position: absolute;
-// 	top: 12.3vh;
-// 	left: 20.6vw;
-// 	width: 23vw;
-// 	line-height: 7.7vh;
-// 	p {
-// 		font-family: 'Satisfy', cursive;
-// 		color: #979797;
-// 		font-size: 2.4vw;
-// 		text-align: center;
-// 		word-spacing: 0.1vw;
+.new {
+	position: absolute;
+	top: 12.3vh;
+	left: 19.6vw;
+	width: 23vw;
+	line-height: 7.7vh;
+	p {
+		font-family: 'Satisfy', cursive;
+		color: #979797;
+		font-size: 2.4vw;
+		text-align: center;
+		word-spacing: 0.1vw;
 
-// 	}
-// 	span {
-// 		font-size: 3.1vw;
-// 		letter-spacing: 0.3vw;
-// 		line-height: 1.5;
-// 		border-bottom: 0.5vh solid #979797;
-// 	}
-// }
+	}
+	span {
+		font-size: 3.1vw;
+		letter-spacing: 0.3vw;
+		line-height: 1.5;
+		border-bottom: 0.5vh solid #979797;
+	}
+}
 
 
-// @media (min-width: 3840px) and (min-height: 2160px) {
-// 	.new {
-// 		top: 12.7vh;
-// 	}
-// }
+@media (min-width: 3840px) and (min-height: 2160px) {
+	.new {
+		top: 12.7vh;
+	}
+
+	// .heart {
+	// 	top:
+	// }
+}
 
 
 
