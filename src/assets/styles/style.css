@@ -626,10 +626,13 @@ h2 {
     top: 13.3vh; }
 
   .heart {
-    top: 19vh; }
+    top: 17vh; }
  }
 
 @media (min-width: 3840px) and (min-height: 2160px) {
   .new {
     top: 12.7vh; }
+
+  .heart {
+    top: 19vh; }
  }
